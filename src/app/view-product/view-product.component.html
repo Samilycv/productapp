@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-center my-3">View Product Details</h1>
+        <div class="col-6">
+            <!-- view details -->
+            <ul class="list-group list-group-flush mt-5">
+                <li class="list-group-item">Title : {{product.title}}</li>
+                <li class="list-group-item">Price : {{product.price}}</li>
+                <li class="list-group-item">Brand : {{product.brand}}</li>
+                <li class="list-group-item">Category : {{product.category}}</li>
+                <li class="list-group-item">Rating : {{product.rating}}</li>
+                <li class="list-group-item">Description : {{product.description}}</li>
+            </ul>
+            <!-- Redirected to main page -->
+            <button routerLink="/" class="btn btn-outline-dark ms-3 my-5">Back To Home</button>
+        </div>
+        <div class="col-6">
+            <!-- Image -->
+            <img width="100%" height="500px" [src]="product.thumbnail" alt="">
+        </div>
+    </div>
+</div>
